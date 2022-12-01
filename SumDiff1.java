@@ -1,0 +1,49 @@
+/*Write a program to get 2 numbers from the user and calculate their sum and difference using '+' and '-' operators respectively. Print the corresponding sum and difference of the numbers as output in the console.
+
+ Input format:
+
+First input: an integer 
+
+Second input: an integer 
+
+Output format:
+
+First output will be the sum of two integers
+
+Second output will be the difference of two integers
+
+Sample Input:
+
+55
+
+34
+
+Sample Output:
+
+89
+
+21*/
+import java.util.Scanner;
+public class SumDiff
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Sum s=new Sum();
+        s.size(a,b);
+    }
+}
+class Sum
+{
+    public static int size(int a,int b)
+    {
+        int c,d;
+        c=a+b;
+        d=a-b;
+        System.out.println(c);
+        System.out.println(d);
+        return 0;
+    }
+}
